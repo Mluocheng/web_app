@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/icons-extra.css">
+		<link rel="stylesheet" href="../fonts/mui-icons-extra.ttf">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.titlebg{
+				height: 100px;
+				width: 100%;
+				background-image: url(../images/cbd.jpg);
+				 position: relative ;
+				z-index: -1;
+			}
+			.titlebgcon{
+				padding-top: 30px;
+				padding-left: 30px;
+			}
+			 
+			.titlebgcon .titlebgcon_img{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				 
+			}
+			
+			.titlebgcon .titlebgcon_img img{
+				border-radius: 50%;
+				width: 100%;height: 100%;
+				border: 1px solid #FFFFFF;
+			}
+			.titlebgcon ul,.titlebgcon li{
+				float: left;
+				list-style: none;
+			}
+			.mui-card .mui-control-content {
+				padding: 10px;
+			}
+			
+			.mui-control-content {
+				height:350px;
+			}
+			.titlebgcon_con{
+				padding-left: 20px;
+			}
+			/*  */
+			.mui-segmented-control{
+				border: none;
+			}
+			.mui-segmented-control .mui-control-item.mui-active{
+				color: #DD524D;
+				background-color: transparent;
+				text-decoration: underline;
+			}
+			.mui-segmented-control .mui-control-item{
+				border: none;
+				color: #C0C0C0;
+			}
+			.iconbox{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 50px;
+				box-sizing: border-box;
+				margin-right: 15px;
+			}
+			.iconbox i{color: #FFFFFF;}
+			.iconbox1{background-color: #e0c500;} 
+			.iconbox2{background-color: deepskyblue;line-height: 40px;} 
+			.iconbox3{background-color: coral;line-height: 44px;} 
+			.iconbox4{background-color: forestgreen;line-height: 44px;} 
+			.iconbox5{background-color: #FF5053;} 
+			.iconbox7{background-color: blueviolet;line-height: 40px;}
+			
+			.bgfoot{
+				
+				
+				background:-webkit-gradient(linear, 0 0, 100% 100%, from(#de5200), to(#ff9e65));
+			}
+			.btombtu{
+				margin: 0 10px;
+				 
+			}
+			.btombtu button{
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="titlebg">
+			<div class="titlebgcon">
+					<div class="mui-row">
+						<div class="mui-col-sm-2 mui-col-xs-2 titlebgcon_img">
+							<img src="../images/cbd.jpg" alt="">
+						</div>
+						<div class="mui-col-sm-10 mui-col-xs-10 titlebgcon_con">
+							<span>刘德华</span>
+							<p>暂未激活会员</p>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1" data="0">vip特权</a>
+					<a class="mui-control-item" href="#item2" data="1">查看谁喜欢我</a>
+					<a class="mui-control-item" href="#item3" data="2">超级曝光</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div id="scroll" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<div class="mui-row">
+										<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox1">
+											<i class="mui-icon-extra mui-icon-extra-heart-filled"></i>
+										</div>
+										<div class="mui-col-sm-10 mui-col-xs-10">
+											<span>会员身份标识</span>
+											<p>昵称升级红色，专属身份标识！</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-row">
+										<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox2">
+											<i class="mui-icon mui-icon-star"></i>
+										</div>
+										<div class="mui-col-sm-10 mui-col-xs-10">
+											<span>每天5个“超级喜欢”</span>
+											<p>喜欢更有分量，配对飙升5倍！</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-row">
+										<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox3">
+											<i class="mui-icon mui-icon-reload"></i>
+										</div>
+										<div class="mui-col-sm-10 mui-col-xs-10">
+											<span>滑过无限反悔</span>
+											<p>强力反悔，瞬间找回错过缘分！</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-row">
+										<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox4">
+											<i class="mui-icon mui-icon-paperplane"></i>
+										</div>
+										<div class="mui-col-sm-10 mui-col-xs-10">
+											<span>任意更改定位</span>
+											<p>任意漫游，与全球朋友say嗨！</p>
+										</div>
+									</div>
+								</li> 
+								<li class="mui-table-view-cell">
+									<div class="mui-row">
+										<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox5">
+											<i class="mui-icon-extra mui-icon-extra-heart-filled"></i>
+										</div>
+										<div class="mui-col-sm-10 mui-col-xs-10">
+											<span>无限喜欢次数</span>
+											<p>突破限制，放肆喜欢不再顾虑！</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<div class="mui-row">
+								<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox5">
+									<i class="mui-icon-extra mui-icon-extra-heart-filled"></i>
+								</div>
+								<div class="mui-col-sm-10 mui-col-xs-10">
+									<span>查看谁喜欢我</span>
+									<p>查看喜欢你的人，右滑直接配对！</p>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<div class="mui-row">
+								<div class="mui-col-sm-2 mui-col-xs-2 iconbox iconbox7">
+									<i class="mui-icon mui-icon-starhalf"></i>
+								</div>
+								<div class="mui-col-sm-10 mui-col-xs-10">
+									<span>超级曝光</span>
+									<p>配对利器！30分钟内会有10倍的人优先看到你！</p>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="btombtu">
+				<button type="button" id="bgfoot" class="mui-btn bgfoot mui-btn-block">获取vip特权</button>
+			</div>
+		
+				
+					
+				
+			
+			
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var segmentedControl = document.getElementById('segmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						var styleEl = document.querySelector('input[name="style"]:checked');
+						var colorEl = document.querySelector('input[name="color"]:checked');
+						if (styleEl && colorEl) {
+							var style = styleEl.value;
+							var color = colorEl.value;
+							segmentedControl.className = 'mui-segmented-control' + (style ? (' mui-segmented-control-' + style) : '') + ' mui-segmented-control-' + color;
+						}
+					}
+				});
+				 
+				 
+				$("#segmentedControl").on("tap","a",function(){
+					 document.getElementById("bgfoot").innerHTML="获取" + this.text
+				})
+				
+			})(mui);
+		</script>
+
+	</body>
+
+</html>

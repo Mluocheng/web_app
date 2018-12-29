@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!-- <link rel="stylesheet" href="../fonts/mui-icons-extra.ttf"> -->
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+
+		<!--标准mui.css-->
+
+
+
+
+		<style>
+			body {
+				padding-bottom: 5px;
+			}
+
+			.lf {
+				float: left;
+			}
+
+			/*  */
+			.picnum {
+				background-color: #C0C0C0;
+				border-radius: 5px;
+			}
+
+			.mui-card-content img {
+				width: 100%;
+
+			}
+			.mui-content{
+				margin-top: 40px;
+			}
+			.mui-content li{
+				list-style: none;
+				text-align: center;
+			}
+			.mui-content div{
+				list-style: none;
+				text-align: center;
+			}
+			.mui-content button{
+				border: 5px solid #E8E8E8;
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 内容-->
+		<div class="mui-card">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header">
+				<span class="picnum">
+					<i class="mui-icon mui-icon-image"></i>
+					5
+				</span>
+			</div>
+			<!--内容区-->
+			<div class="mui-card-content">
+				<img src="../images/cbd.jpg" alt="">
+				<div>
+					<h4>哦</h4>
+					<span>
+						<span class="mui-badge mui-badge-primary"><span class="mui-icon mui-icon-person" style="font-size: 12px;">23</span></span>
+						<span class="mui-badge mui-badge-warning">天蝎座</span>
+					</span>
+					<p>其他</p>
+				</div>
+
+			</div>
+			<!--页脚，放置补充信息或支持的操作-->
+			<!-- <div class="mui-card-footer">
+				
+			</div> -->
+
+
+		</div>
+
+		<div class="mui-content">
+			<div class="mui-row">
+				<div class="mui-col-xs-2">
+					<button>
+						<i class="mui-icon mui-icon-loop"></i>
+					</button>
+				</div>
+				<div class="mui-col-xs-3">
+					<button>
+						<i class="mui-icon mui-icon-closeempty"></i>
+					</button>
+					
+				</div>
+				<div class="mui-col-xs-2">
+					<button>
+						<i class="mui-icon mui-icon-spinner-cycle mui-spin"></i>
+					</button>
+					
+				</div>
+				<div class="mui-col-xs-3">
+					<button>
+						<i class="mui-icon-extra mui-icon-extra-heart-filled"></i>
+					</button>
+					
+				</div>
+				<div class="mui-col-xs-2">
+					<button>
+						<i class="mui-icon mui-icon-star"></i>
+					</button>
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				pullRefresh: {}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!-- <link rel="stylesheet" href="../fonts/mui-icons-extra.ttf"> -->
+		<link rel="stylesheet" type="text/css" href="../css/icons-extra.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+
+		<!--标准mui.css-->
+
+
+
+
+		<style>
+			body {
+				padding-bottom: 5px;
+			}
+
+			.lf {
+				float: left;
+			}
+
+			/*  */
+			.mui-card {
+				margin: 0;
+			}
+
+			.mui-card .mui-table-view-cell {
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+
+			.mui-card .mui-table-view-cell:after {
+				height: 0;
+			}
+
+			.cardfooter {
+				display: inline-block;
+				width: 100%;
+				height: 28px;
+				line-height: 28px;
+			}
+
+			.cardfooter1 {
+				background-color: #ffecd2;
+			}
+
+			.lookvip {
+				float: right;
+				color: #F14E41;
+			}
+
+			.numpeo {
+				color: #F14E41;
+			}
+
+			.howlike {
+				float: right;
+				background-color: rgba(0, 0, 0, 0.1);
+				border: none;
+
+			}
+
+			/*  */
+			.mybox {
+				margin-top: 15px;
+			}
+
+			.defaultinfortitlr {
+				display: inline-block;
+				width: 30%;
+				color: #999999;
+			}
+
+			/*  */
+			.mylabel {
+				text-align: center;
+				line-height: 20px;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border-radius: 5px;
+				background-color: #1f395a;
+				color: #FFFFFF;
+			}
+
+			.mylabellist {
+				display: inline-block;
+				width: auto;
+				text-align: center;
+				height: 20px;
+				line-height: 20px;
+				border-radius: 5px;
+				background-color: #8a9296;
+				color: 1f395a;
+			}
+			.motion{color: #008000;}
+			.muisic{color: #4CD964;}
+			.food{color: #8B0000;}
+			.video{color: #EC971F;}
+			.book{color: aquamarine;}
+			.travel{color: darkmagenta;}
+			.labelboxlist{
+				height: 20px;
+				line-height: 20px;
+				border-radius: 5px;
+				display: inline-block;
+				width: auto;
+				text-align: center;
+			}
+			.motionlispan{
+				color:#008000 ;
+				background-color: #84ab8a;
+			}
+			.muisiclispan{
+				color:#4CD964 ;background-color: #c5e6ca;
+			}
+			.foodlispan{
+				color:#8B0000 ;background-color: #d8abc0;
+			}
+			.videolispan{
+				color:#8B0000 ;background-color: #c1ba9f;
+			}
+			.booklispan{
+				color:#aquamarine ;background-color: #9fbcc1;
+			}
+			.travellispan{
+				color:#darkmagenta ;background-color: #bc9fc1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-card">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header mui-card-media" style="height: 300px;background-image: url(../images/logo.png);"></div>
+			<!--内容区-->
+			<div class="mui-card-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<h4>刘德华</h4>
+					</li>
+					<li class="mui-table-view-cell">
+						<span>
+							<span class="mui-badge mui-badge-primary"><span class="mui-icon mui-icon-person" style="font-size: 12px;">26</span></span>
+							<span class="mui-badge mui-badge-warning">巨蟹座wsdasd</span>
+						</span>
+
+					</li>
+					<li class="mui-table-view-cell">
+						<p>现在活跃</p>
+					</li>
+
+					<li class="mui-table-view-cell">
+						<p class="cardfooter cardfooter1">
+							<span class="mui-icon mui-icon-starhalf"></span> 未开通会员
+							<span class="lookvip">查看特权</span>
+						</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<p class="cardfooter">
+							<span class="mui-icon-extra mui-icon-extra-heart-filled"></span> <span class="numpeo">255</span>人喜欢了你
+
+							<button class="howlike">谁喜欢我？</button>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<!--页脚，放置补充信息或支持的操作-->
+			<!-- <div class="mui-card-footer">
+						
+					</div> -->
+		</div>
+
+		<div class="mybox">
+			<p>我的信息</p>
+			<div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<span class="defaultinfortitlr">星座</span>
+						<span>巨蟹座</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<span class="defaultinfortitlr">行业</span>
+						<span>it/互联网/通讯</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<span class="defaultinfortitlr">工作领域</span>
+						<span>工程师</span>
+					</li>
+					<li class="mui-table-view-cell">
+						<span class="defaultinfortitlr">个人签名</span>
+						<span>专业修改各种bug</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mybox">
+			<p>我的标签</p>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span class="mylabel">#</span>
+					<span class="mylabellist">180 70kg</span>
+					<span class="mylabellist">马甲线</span>
+					<span class="mylabellist">随性</span>
+
+				</li>
+			</ul>
+		</div>
+
+		<div class="mybox">
+			<p>我的兴趣</p>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell motionli">
+					<span class="lf motion mui-icon-extra mui-icon-extra-gold"></span>
+					<span class="labelboxlist  motionlispan">马甲线</span>
+					<span class="labelboxlist  motionlispan">随性</span>
+				</li>
+				<li class="mui-table-view-cell muisicli">
+					<span class="lf muisic mui-icon-extra mui-icon-extra-outline"></span>
+<span class="labelboxlist  muisiclispan">随性</span>
+				</li>
+				<li class="mui-table-view-cell foodli">
+					<span class="lf food mui-icon-extra mui-icon-extra-gift"></span>
+<span class="labelboxlist  foodlispan">随性</span>
+				</li>
+				<li class="mui-table-view-cell videoli">
+					<span class="lf video mui-icon-extra mui-icon-extra-regist"></span>
+<span class="labelboxlist  videolispan">随性</span>
+				</li>
+				<li class="mui-table-view-cell bookli">
+					<span class="lf book mui-icon-extra mui-icon-extra-grech"></span>
+<span class="labelboxlist booklispan">马甲线</span>
+					<span class="labelboxlist booklispan">随性</span>
+					<span class="labelboxlist booklispan">马甲线</span>
+					<span class="labelboxlist booklispan">随性</span>
+					<span class="labelboxlist booklispan">马甲线</span>
+					
+				</li>
+				<li class="mui-table-view-cell travelli">
+					<span class="lf travel mui-icon-extra mui-icon-extra-holiday"></span>
+<span class="labelboxlist travellispan">随性</span>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="mybox">
+			<p>我的问答</p>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span>想去哪个城市生活？</span>
+					<p>成都</p>
+				</li>
+			</ul>
+		</div>
+
+
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				pullRefresh: {}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			
+			
+		</script>
+	</body>
+
+</html>
